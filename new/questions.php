@@ -5,7 +5,9 @@
 <?php foreach(json_decode(file_get_contents('set'.$_REQUEST['set'].'.json')) as $quest_idx=>$question){ ?>
 <div><?=$question[0]?><br>
 <?php foreach($question[1] as $poss_idx=>$possibility){ ?>
-<input type="radio" name="answers[<?=$quest_idx?>]" value="<?=$poss_idx?>"><?=$possibility?><br>
+<input type="radio" name="answers[<?=$quest_idx?>]" value="<?=$poss_idx?>"
+id="id_<?=$quest_idx?>_<?=$poss_idx?>"><label for="id_<?=$quest_idx?>_<?=$poss_idx?>">
+<?=$possibility?></label><br>
 <?php } ?>
 </div>
 <?php } ?>
