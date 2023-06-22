@@ -1,0 +1,4 @@
+[["Does a star emit light?",      1, ["Yes, generally.",    "No, never."]],
+["Is a human always right?",      2, ["Yes, always.",       "Not always."]],
+["Select a not UNIX-derived OS.", 1, ["Microsoft Windows.", "Debian GNU/Linux.", "Darwin." ]]
+]  
