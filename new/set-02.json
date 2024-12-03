@@ -1,4 +1,26 @@
-[["Bits, Binary digits represent...", 2, ["True, Maybe, False.", "True or False."]],
-["1 Byte and 1 Nibble",               1, ["8 bits and 4 bits.", "32 and 64 bits."]],
-["1 Gigabyte is 1024 Megabytes so",   1, ["1 Megabyte is 1024 Kilobytes.", "1 Terabyte is 1000 Gigabytes." ]]
-]  
+[
+    [
+        "Bits, Binary digits represent...",
+        2,
+        [
+            "True, Maybe, False.",
+            "True or False."
+        ]
+    ],
+    [
+        "1 Byte and 1 Nibble",
+        1,
+        [
+            "8 bits and 4 bits.",
+            "32 and 64 bits."
+        ]
+    ],
+    [
+        "1 Gigabyte is 1024 Megabytes so",
+        1,
+        [
+            "1 Megabyte is 1024 Kilobytes.",
+            "1 Terabyte is 1000 Gigabytes."
+        ]
+    ]
+]
