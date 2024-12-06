@@ -32,7 +32,7 @@
 		echo "<div>$correct_count/$count correct</div>";
 	} else {
 	?>
-		<form method="get">
+		<form method="post">
 			<input type="hidden" name="mode" value="solutions">
 			<?php
 			foreach ($questions as $quest_idx => $question) {
@@ -40,11 +40,13 @@
 				echo htmlspecialchars($question[0]);
 				echo '<br>';
 				foreach ($question[1] as $poss_idx => $possibility) {
+					echo '<label> ';
 					echo '<input type="radio"' .
 						' name="answers[' . $quest_idx . ']"' .
 						' value="' . $poss_idx . '"' .
 						' required>' .
-						htmlspecialchars($possibility) . '<br>';
+						htmlspecialchars($possibility);
+					echo ' </label>';
 				}
 				echo "</div>\n";
 			}
