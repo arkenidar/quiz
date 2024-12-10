@@ -36,9 +36,9 @@
 			<input type="hidden" name="mode" value="solutions">
 			<?php
 			foreach ($questions as $quest_idx => $question) {
-				echo '<div>';
+				echo "\n" . '<div>';
 				echo htmlspecialchars($question[0]);
-				echo '<br>';
+				echo '<br>' . "\n";
 				foreach ($question[1] as $poss_idx => $possibility) {
 					echo '<label> ';
 					echo '<input type="radio"' .
@@ -46,7 +46,7 @@
 						' value="' . $poss_idx . '"' .
 						' required>' .
 						htmlspecialchars($possibility);
-					echo ' </label>';
+					echo ' </label>' . "\n";
 				}
 				echo "</div>\n";
 			}
